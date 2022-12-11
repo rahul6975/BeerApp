@@ -57,6 +57,7 @@ open class LandingPage : AppCompatActivity(), ClickListener {
         handler?.postDelayed({ getData() }, 500)
     }
 
+
     private val handler by lazy { Looper.myLooper()?.let { Handler(it) } }
 
     private fun setRecyclerView() {
